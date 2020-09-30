@@ -1,132 +1,131 @@
 </!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>progress barrs</title>
-	<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
+  <meta charset="utf-8">
+  <title>progress barrs</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #circleBar {
+      margin-top: 180px;
+      text-align: center;
+      font-family: tahoma;
 
+    }
 
-		#circleBar
-		{
-			margin-top: 180px;
-			text-align: center;
-			font-family: tahoma;
+    #circleBar .round {
+      min-height: 255px;
+      margin-top: 30px;
+      position: relative;
+      margin-bottom: 20px;
 
-		}
-		 
-		 #circleBar .round
-		 {
-		 	min-height: 255px;
-		 	margin-top: 30px;
-		 	position: relative;
-		 	margin-bottom: 20px;
+    }
 
-		 }
-		 #circleBar .round strong
-		 {
-		 	position: absolute;
-		 	top: 50%;
-		 	left: 50%;
-		 	margin-top: -50px;
-		 	transform: translate(-50%);
-		 	font-size: 40px;
-		 	color: #212121;
-		 	font-weight: 100;
-		 }
-		 #circleBar span
-		 {
-		 	display: block;
-		 	color: #999;
-		 	font-size: 17px;
-		 	margin-top: 10px;
-		 }
-		 #circleBar span i
-		 {
-		 	color: #ff5c5c;
-		 	font-size: 22px;
-		 	margin-right: 7px;
+    #circleBar .round strong {
+      position: absolute;
+      top: 50%;
+      left: 56%;
+      margin-top: -61px;
+      transform: translate(-50%);
+      font-size: 45px;
+      color: #212121;
+      font-weight: 100;
+    }
 
-		 }
-		 section button:hover
-		 {
-		 	background-color: #ff5c5c;
+    #circleBar span {
+      display: block;
+      color: #999;
+      font-size: 17px;
+      margin-top: 10px;
+    }
 
-		 }
-	</style>
+    #circleBar span i {
+      color: #cc8181;
+      font-size: 12px;
+      margin-right: 7px;
+
+    }
+
+    section button:hover {
+      background-color: #cc8181;
+
+    }
+  </style>
 </head>
+
 <body>
 
-	<section id="circleBar">
-		<h1>Circle Progress Bar</h1>
-		<p>
-			animated work requires much work and enthusiam and hard work and dedication.
-		</p>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<div class="round" data-value="0.67" data-size="200" data-thickness="12">
-						<strong></strong>
-						<span><i class="fa fa-html5"></i>
-							Html skilllllssssss
+  <section id="circleBar">
+    <h1>Circle Progress Bar</h1>
+    <p>
+      Animated work requires more enthusiasm ,hard work and dedication.
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="round" data-value="0.67" data-size="200" data-thickness="12">
+            <strong></strong>
+            <span><i class="fa fa-html5"></i>
+              HTML SKILLS
 
-						</span>
-						
-					</div>
-				</div>
+            </span>
 
-				<div class="col-md-3">
-					<div class="round" data-value="0.74" data-size="200" data-thickness="12">
-						<strong></strong>
-						<span><i class="fa fa-css3"></i>
-							csssssss skilllllssssss
+          </div>
+        </div>
 
-						</span>
-						
-					</div>
-				</div>
+        <div class="col-md-3">
+          <div class="round" data-value="0.74" data-size="200" data-thickness="12">
+            <strong></strong>
+            <span><i class="fa fa-css3"></i>
+              CSS SKILLS
 
+            </span>
 
-				<div class="col-md-3">
-					<div class="round" data-value="0.54" data-size="200" data-thickness="12">
-						<strong></strong>
-						<span><i class="fa fa-jsfiddle"></i>
-							javavavava skilllllssssss
-
-						</span>
-						
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="round" data-value="0.95" data-size="200" data-thickness="12">
-						<strong></strong>
-						<span><i class="fa fa-laptop"></i>
-							bootstrap skilllllssssss
-
-						</span>
-						
-					</div>
-				</div>
+          </div>
+        </div>
 
 
+        <div class="col-md-3">
+          <div class="round" data-value="0.54" data-size="200" data-thickness="12">
+            <strong></strong>
+            <span><i class="fa fa-jsfiddle"></i>
+              JAVA SKILLS
 
-		</div>
-		<button class="btn" onClick="Circlle('.round');">Refresh</button>
-	</section>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
-	<script type="text/javascript">
-		function Circlle(el)
-		{
-			$(el).circleProgress({ fill:  { color: '#ff5c5c' }})
-			.on('circle-animation-progress',function(event,progress,stepValue){
-				$(this).find('strong').text(String(stepValue.toFixed(2)).substr(2)+'%');
-			});
-		};
-		Circlle('.round');
+            </span>
 
-	</script>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="round" data-value="0.95" data-size="200" data-thickness="12">
+            <strong></strong>
+            <span><i class="fa fa-laptop"></i>
+              BOOTSTRAP SKILLS
+
+            </span>
+
+          </div>
+        </div>
+
+
+
+      </div>
+      <button class="btn" onClick="Circlle('.round');">REFRESH</button>
+  </section>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+  <script type="text/javascript">
+    function Circlle(el) {
+      $(el).circleProgress({ fill: { color: '#ff5c5c' } })
+        .on('circle-animation-progress', function (event, progress, stepValue) {
+          $(this).find('strong').text(String(stepValue.toFixed(2)).substr(2) + '%');
+        });
+    };
+    Circlle('.round');
+
+  </script>
 
 </body>
+
 </html>
